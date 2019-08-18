@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+   
+		<h1>Upload a Check</h1>
+		 <form action="/handleUploadCheck" method="post" enctype="multipart/form-data">
+            Browse (pdf, jpeg, bmp, zip): <BR>
+		{{form.photo}}
+        <p>
+            {{ form.password.label }}<br>
+            {{ form.password(size=32) }}
+        </p>
+
+	 	<p>
+            {{ form.amount.label }}<br>
+            {{ form.amount(size=32) }}
+        </p>
+        <p>
+            {{ form.message.label }}<br>
+            {{ form.message(size=32) }}
+        </p>
+		<input type="submit" value="Upload"/>
+		</p>
+		</form> 
+   
+{% endblock %}

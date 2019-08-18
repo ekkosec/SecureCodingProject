@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Hi, {{ user.username }}! You have {{ checks.count()}} checks in the system. </h1>
+    <div><p></p></div>
+    {% for check in checks %}
+    <div><p>{{ check.id}} - amount: {{ check.amount }}, status: {{check.status}}</p></div>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Get Check Status</h1>
+    <form action="" method="get" novalidate>
+        <p>
+            {{ form.check_id.label }}<br>
+            {{ form.check_id(size=32) }}<br>
+            {% for error in form.check_id.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p><input type="submit" value="Check Status"> </p>
+
+
+    </form>
+{% endblock %}
