@@ -4,7 +4,7 @@ Install python 3.7 with your preferred env management (conda/venv)
 
 ### Install packages: 
 ```
-pip install requirements.txt 
+pip install -r requirements.txt 
 ```
 
 ### Create db: 
