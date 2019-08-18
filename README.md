@@ -1,6 +1,7 @@
 # Installation 
 
 Install python 3.7 with your preferred env management (conda/venv)
+
 Install 7zip and make sure 7z.exe is in the PATH
 
 ### Install packages: 
