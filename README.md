@@ -5,11 +5,15 @@ Install packages:
 pip install requirements.txt 
 
 Create db: 
-flask db init
+
+flask db init 
+
 flask db migrate 
+
 flask db upgrade 
 
 Run:
+
 flask run
 
 # Usage 
